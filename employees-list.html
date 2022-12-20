@@ -442,7 +442,7 @@
             <a href="#"
              class="btn btn-sm btn-warning"
              data-bs-toggle="modal"
-             data-bs-target="employee_edit"
+             data-bs-target="#employee_edit"
 
              >Edit Details</a>
              <a href="#"
@@ -460,6 +460,123 @@
 
 <!--  Employee Details -->
 
+<!-- Edit Employee modal -->
+<div
+    class="modal fade"
+    id="employee_edit"
+    data-bs-backdrop="static"
+    tabindex="1"
+    aria-hidden="true"
+    style="backdrop-filter: blur(5px);">
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+        <div class="modal-header text-bg-dark">
+            <h5 class="modal-title">Edit Employee Details</h5>
+            <button
+            type="button" class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="close"
+            >
+                
+            </button>
+        </div>
+        <div class="modal-body">
+           <form>
+            <div class="container">
+                <div class="row  gx-3">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <input type="date" class="form-control form-control-sm" value="2022-07-25" required>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm" 
+                            placeholder="First Name"
+                            value="John"
+                            required>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm" 
+                            placeholder="Last Name"
+                            value="Doe"
+                            required>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-sm" 
+                            placeholder="Email ID"
+                            value="johndoe@gmail.com"
+                            required>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-sm" 
+                            placeholder="Phone"
+                            value="9393838383"
+                            required>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <select class="form-select form-select-sm" aria-label="Job Assigned">
+                                <option selected>Select Job for Employee</option>
+                                <option value="Graphic Designer">Graphic Designer</option>
+                                <option value="Web Designer">Web Designer</option>
+                                <option selected value="Web Developer">Web Developer</option>
+
+                                <option value="Digital Marketer">Digital Marketer</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="d-grid">
+                            <button
+                            type="submit"
+                            class="btn btn-sm btn-success">
+                            Update Employee
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="d-grid">
+                            <button
+                            type="button"
+                            class="btn btn-sm btn-warning"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            >
+                            Close
+
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           </form>     
+        </div>
+       </div> 
+    </div>
+
+
+
+</div>
+<!-- Edit Employee modal -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

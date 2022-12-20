@@ -142,7 +142,7 @@
                                 <a 
                                 href="#"
                                 class="btn btn-sm btn-primary"
-                                data-bs-toggle="model"
+                                data-bs-toggle="modal"
                                 data-bs-target="#employee_detail"
                                 >Details</a>
                             </div>
@@ -151,7 +151,7 @@
                             <a 
                             href="#"
                             class="btn btn-sm btn-warning"
-                            data-bs-toggle="model"
+                            data-bs-toggle="modal"
                             data-bs-target="#employee_edit"
                             >Edit</a>
                         </div></td>
@@ -159,7 +159,7 @@
                             <a 
                             href="#"
                             class="btn btn-sm btn-danger"
-                            data-bs-toggle="model"
+                            data-bs-toggle="modal"
                             data-bs-target="#employee_delete"
                             >Delete</a>
                         </div></td>
@@ -174,7 +174,7 @@
                                 <a 
                                 href="#"
                                 class="btn btn-sm btn-primary"
-                                data-bs-toggle="model"
+                                data-bs-toggle="modal"
                                 data-bs-target="#employee_detail"
                                 >Details</a>
                             </div>
@@ -183,7 +183,7 @@
                             <a 
                             href="#"
                             class="btn btn-sm btn-warning"
-                            data-bs-toggle="model"
+                            data-bs-toggle="modal"
                             data-bs-target="#employee_edit"
                             >Edit</a>
                         </div></td>
@@ -191,7 +191,7 @@
                             <a 
                             href="#"
                             class="btn btn-sm btn-danger"
-                            data-bs-toggle="model"
+                            data-bs-toggle="modal"
                             data-bs-target="#employee_delete"
                             >Delete</a>
                         </div></td>
@@ -206,7 +206,7 @@
                                 <a 
                                 href="#"
                                 class="btn btn-sm btn-primary"
-                                data-bs-toggle="model"
+                                data-bs-toggle="modal"
                                 data-bs-target="#employee_detail"
                                 >Details</a>
                             </div>
@@ -215,7 +215,7 @@
                             <a 
                             href="#"
                             class="btn btn-sm btn-warning"
-                            data-bs-toggle="model"
+                            data-bs-toggle="modal"
                             data-bs-target="#employee_edit"
                             >Edit</a>
                         </div></td>
@@ -223,7 +223,7 @@
                             <a 
                             href="#"
                             class="btn btn-sm btn-danger"
-                            data-bs-toggle="model"
+                            data-bs-toggle="modal"
                             data-bs-target="#employee_delete"
                             >Delete</a>
                         </div></td>
@@ -238,7 +238,7 @@
                                 <a 
                                 href="#"
                                 class="btn btn-sm btn-primary"
-                                data-bs-toggle="model"
+                                data-bs-toggle="modal"
                                 data-bs-target="#employee_detail"
                                 >Details</a>
                             </div>
@@ -247,7 +247,7 @@
                             <a 
                             href="#"
                             class="btn btn-sm btn-warning"
-                            data-bs-toggle="model"
+                            data-bs-toggle="modal"
                             data-bs-target="#employee_edit"
                             >Edit</a>
                         </div></td>
@@ -255,7 +255,7 @@
                             <a 
                             href="#"
                             class="btn btn-sm btn-danger"
-                            data-bs-toggle="model"
+                            data-bs-toggle="modal"
                             data-bs-target="#employee_delete"
                             >Delete</a>
                         </div></td>
@@ -382,6 +382,84 @@
 </div>
 
 <!-- Add Employee modal -->
+
+<!--  Employee Details -->
+<div
+    class="modal fade"
+    id="employee_detail"
+    data-bs-backdrop="static"
+    tabindex="1"
+    aria-hidden="true"
+    style="backdrop-filter: blur(5px);">
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+        <div class="modal-header text-bg-dark">
+            <h5 class="modal-title"> Employee Details</h5>
+            <button
+            type="button" class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="close"
+            >
+                
+            </button>
+        </div>
+        <div class="modal-body p-0">
+              <table class="table table-bordered small mb-0">
+                <tr>
+                    <th class="w-50">ID</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Employee ID</th>
+                    <td>741</td>
+                </tr>
+                <tr>
+                    <th>First Name</th>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td>Doe</td>
+                </tr>
+                
+                <tr>
+                    <th>Email ID</th>
+                    <td>johndoe@gmail.com</td>
+                </tr>
+                
+                <tr>
+                    <th>Phone</th>
+                    <td>7583939393</td>
+                </tr>
+                <tr>
+                    <th>Joining Date</th>
+                    <td>25th July 2022</td>
+                </tr>
+              </table>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#"
+             class="btn btn-sm btn-warning"
+             data-bs-toggle="modal"
+             data-bs-target="employee_edit"
+
+             >Edit Details</a>
+             <a href="#"
+             class="btn btn-sm btn-primary"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+             >Close</a>
+        </div>
+       </div> 
+    </div>
+
+
+
+</div>
+
+<!--  Employee Details -->
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
